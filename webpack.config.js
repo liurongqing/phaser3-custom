@@ -12,7 +12,7 @@ module.exports = {
 
    entry: {
        'phaser-custom': `./phaser-custom.js`,
-       'phaser-custom.min': './phaser-custom.js'
+       'phaser.min': './phaser-custom.js'
    },
 
    resolve: {
