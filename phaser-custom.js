@@ -20,12 +20,18 @@ var Phaser = {
         Components: require('gameobjects/components'),
 
         Container: require('gameobjects/container/Container'),
+        Group: require('gameobjects/group/Group'),
+        Zone: require('gameobjects/zone/Zone'),
+        Graphics: require('gameobjects/graphics/Graphics'),
         Image: require('gameobjects/image/Image'),
         Sprite: require('gameobjects/sprite/Sprite'),
         Text: require('gameobjects/text/static/Text'),
 
         Factories: {
             Container: require('gameobjects/container/ContainerFactory'),
+            Group: require('gameobjects/group/GroupFactory'),
+            Zone: require('gameobjects/zone/ZoneFactory'),
+            Graphics: require('gameobjects/graphics/GraphicsFactory'),
             Image: require('gameobjects/image/ImageFactory'),
             Sprite: require('gameobjects/sprite/SpriteFactory'),
             Text: require('gameobjects/text/static/TextFactory')
@@ -33,6 +39,9 @@ var Phaser = {
 
         Creators: {
             Container: require('gameobjects/container/ContainerCreator'),
+            Group: require('gameobjects/group/GroupCreator'),
+            Zone: require('gameobjects/zone/ZoneCreator'),
+            Graphics: require('gameobjects/graphics/GraphicsCreator'),
             Image: require('gameobjects/image/ImageCreator'),
             Sprite: require('gameobjects/sprite/SpriteCreator'),
             Text: require('gameobjects/text/static/TextCreator')
@@ -43,6 +52,7 @@ var Phaser = {
         FileTypes: {
             ImageFile: require('loader/filetypes/ImageFile'),
             SpriteSheetFile: require('loader/filetypes/SpriteSheetFile'),
+            AtlasJSONFile: require('loader/filetypes/AtlasJSONFile'),
             TextFile: require('loader/filetypes/TextFile'),
         },
         LoaderPlugin: require('loader/LoaderPlugin'),
